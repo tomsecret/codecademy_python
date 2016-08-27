@@ -106,6 +106,143 @@ max()
 min()
 abs()
 
+#######
+suitcase = ["u", "d", "yo"] 
+suitcase.append("sunglasses")
+
+my_list[:2]
+# Grabs the first two items
+# till 2 but index 2 is not included 
+my_list[3:]
+# Grabs the fourth through last items
+
+animals = ["ant", "bat", "cat"]
+print animals.index("bat")
+
+animals.insert(1, "dog")
+print animals
+
+####for loop
+my_list = [1,9,3,8,5,7]
+
+for number in my_list:
+    # Your code here
+    print number*2
+
+square_list.sort()
+##################--------------------------------------------------
+# Assigning a dictionary with three key-value pairs to residents:
+residents = {'Puffin' : 104, 'Sloth' : 105, 'Burmese Python' : 106}
+
+print residents['Puffin'] # Prints Puffin's room number
+
+# Your code here!
+print residents['Sloth'], residents['Burmese Python']
+
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print menu['Chicken Alfredo']
+
+# Your code here: Add some dish-price pairs to menu!
+menu['Spam'] = 2.50
+menu['Sam'] = 2.50
+menu['Spa'] = 2.50
+
+
+
+print "There are " + str(len(menu)) + " items on the menu."
+print menu
+
+del dic['something']
+
+remove.list['something']
+
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+inventory['pocket'] = ['seashell', 'strange berry', 'lint']
+
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+
+# Your code here
+inventory['gold'] = 550
+
+########
+webster = {
+	"Aardvark" : "A star of a popular children's cartoon show.",
+    "Baa" : "The sound a goat makes.",
+    "Carpet": "Goes on the floor.",
+    "Dab": "A small amount."
+}
+
+# Add your code below!
+for key in webster:
+    print webster[key]
+    
+def fizz_count(x):
+   count = 0
+   for items in x:
+        if items == "fizz":
+            count = count + 1
+   return count
+   
+#string looping
+prices = {
+    "banana" : 4,
+    "apple"  : 2,
+    "orange" : 1.5,
+    "pear"   : 3,
+}
+stock = {
+    "banana" : 6,
+    "apple"  : 0,
+    "orange" : 32,
+    "pear"   : 15,
+}
+total = 0 
+for key in prices:
+    print key
+    print "price: %s" % prices[key]
+    print "stock: %s" % stock[key]
+    total = prices[key]*stock[key] + total
+    print total
+
+##--------------------------------------------------
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+    
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+# Write your code below!
+def compute_bill(food):
+    total = 0
+    for items in food:
+        if stock[items] > 0:
+            total = prices[items] + total
+            stock[items] = stock[items] - 1
+    return total
+    
+    
+
 
 
 
