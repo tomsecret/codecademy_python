@@ -85,6 +85,26 @@ print greater_less_equal_5(6)
 
 original = raw_input("Enter a word:")
 
+##ways of using modules
+import math 
+
+print math.sqrt(25)
+
+from module import *
+
+##
+import math            # Imports the math module
+everything = dir(math) # Sets everything to a list of things from math
+print everything       # Prints 'em all!
+
+print type(42)
+print type(4.2)
+print type('spam')
+
+
+max()
+min()
+abs()
 
 
 
