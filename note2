@@ -3,3 +3,64 @@ while count < 10:
     print "Hello, I am a while and count is", count
     count += 1
 
+choice = raw_input('Enjoying the course? (y/n)')
+
+while choice != 'y' and choice != 'n':  # Fill in the condition (before the colon)
+    choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+    
+#use of break=======================================
+import random
+
+print "Lucky Numbers! 3 numbers will be generated."
+print "If one of them is a '5', you lose!"
+
+count = 0
+while count < 3:
+    num = random.randint(1, 6)
+    print num
+    if num == 5:
+        print "Sorry, you lose!"
+        break
+    count += 1
+else:
+    print "You win!"
+
+
+
+#example 2==================
+from random import randint
+
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+
+guesses_left = 3
+# Start your game!
+while guesses_left > 0:
+    guess = int(raw_input("Your guess: "))
+    guesses_left = guesses_left - 1 
+    if guess == random_number:
+        print 'You win!'
+        break
+else:
+    print "You lose."
+
+#alternative to while loop
+print "Counting..."
+
+for i in range(20):
+    print i
+#----
+hobbies = []
+
+for num in range(3):
+    hobby = raw_input()
+    hobbies.append(hobby)
+    # Add your code below!
+
+#---------so what is , for?
+word = "Marble"
+for char in word:
+    print char,
+#The , character after our print statement means that our next print statement keeps printing on the same line.
+
+
